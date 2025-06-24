@@ -78,6 +78,34 @@
        background-color:red
        }
       
+       div {
+      right:30px;
+      border:3px solid #73AD21;
+       }
+       div.absolute {
+        position:absolute;
+        left:50px;
+      border:3px solid blue;
+       }
+       div.relative {
+        position:relative;
+        left:100px;
+      border:3px solid #73AD21;
+       }
+       div.fixed {
+        position:fixed;
+        top:0px;
+        right:20px;
+        width:300px;
+      border:3px solid #73AD21;
+       }
+       div.sticky {
+        position:sticky;
+        top:1px;
+        left:20px;
+        width:100px
+      border:3px solid #73AD21;
+       }
         </style>
 </head>
 <body>
@@ -207,5 +235,22 @@
   <hr sytle="width: 10%; height: 10px; color: blue;">
   <P class="example2">my content example2</P>
   <hr sytle="width: 20%; height: 1px; color: blue;">
+
+  <h2>POSITIONING<h2>
+    <div>
+      Div with no position property
+    </div>
+    <div class="sticky">
+      Div with sticky position property
+    </div>
+    <div class="relative">
+    This Div element has position: relative
+    <div class="absolute">
+      Absolute class DIV
+      </div>
+      </div>
+      <div class="fixed">
+        Div with fixed position property
+      </div>
 </body>
 </html>
